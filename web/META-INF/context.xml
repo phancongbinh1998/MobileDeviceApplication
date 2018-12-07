@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/MobileDeviceV2">
+    <Resource name="mobile" type="javax.sql.DataSource" auth="Container"
+    driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+    url="jdbc:sqlserver://localhost:1433;databaseName=MobileDevice;instanceName=BINHPCSE62805;"
+    username="sa" password="binhprovnvt98"/>
+</Context>

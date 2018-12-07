@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+    <field name="mobileId">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>
+                mobileId is required  
+            </message>
+        </field-validator>
+        <field-validator type="stringlength">
+            
+            <param name="maxLength">10</param>
+            <message>
+                mobileId length required not more than 10 chars
+            </message>
+        </field-validator>
+    </field>
+    <field name="description">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>
+                description is required  
+            </message>
+        </field-validator>
+        <field-validator type="stringlength">
+            
+            <param name="maxLength">250</param>
+            <message>
+                description length required not more than 250 chars
+            </message>
+        </field-validator>
+    </field>
+    <field name="price">
+        <field-validator type="conversion">
+            <param name="fieldName">price</param>
+            <message>
+                price must be number
+            </message>
+        </field-validator> 
+        
+    </field>
+    <field name="mobileName">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>
+                mobileName is required  
+            </message>
+        </field-validator>
+        <field-validator type="stringlength">
+            
+            <param name="maxLength">20</param>
+            <message>
+                mobileName length required not more than 20 chars
+            </message>
+        </field-validator>
+    </field>
+    <field name="yearOfProduction">
+        <field-validator type="conversion">
+            <param name="fieldName">yearOfProduction</param>
+            <message>
+                yearOfProduction must be number
+            </message>
+        </field-validator> 
+        
+    </field>
+    <field name="quantity">
+        <field-validator type="conversion">
+            <param name="fieldName">quantity</param>
+            <message>
+                quantity must be number
+            </message>
+        </field-validator> 
+        
+    </field>
+</validators>
